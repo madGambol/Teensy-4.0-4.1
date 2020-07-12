@@ -14,7 +14,7 @@ uint8_t analog_write_res = 8;
 
 #define M(a, b) ((((a) - 1) << 4) | (b))
 
-#if defined(__IMXRT1062__)
+#if defined(__IMXRT1062__) || defined(__IMXRT1062_T41__)
 
 const struct pwm_pin_info_struct pwm_pin_info[] = {
 	{1, M(1, 1), 0, 4},  // FlexPWM1_1_X   0  // AD_B0_03

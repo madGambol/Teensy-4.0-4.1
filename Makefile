@@ -28,7 +28,7 @@
 # SOFTWARE.
 
 # set your MCU type here, or make command line `make MCU=IMXRT1062`
-MCU=IMXRT1062
+MCU=IMXRT1062_T41
 
 # The name of your project (used to name the compiled .hex file)
 TARGET = main
@@ -37,7 +37,7 @@ TARGET = main
 OPTIONS = -DF_CPU=600000000 -DUSB_SERIAL -DLAYOUT_US_ENGLISH -DUSING_MAKEFILE
 
 # options needed by many Arduino libraries to configure for Teensy 4.0
-OPTIONS += -D__$(MCU)__ -DARDUINO=10810 -DTEENSYDUINO=149 -DARDUINO_TEENSY40
+OPTIONS += -D__$(MCU)__ -DARDUINO=10810 -DTEENSYDUINO=149 -DARDUINO_TEENSY41
 
 # for Cortex M7 with single & double precision FPU
 CPUOPTIONS = -mcpu=cortex-m7 -mfloat-abi=hard -mfpu=fpv5-d16 -mthumb

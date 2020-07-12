@@ -547,7 +547,7 @@
 
 
 
-#elif defined(__IMXRT1062__) && defined(ARDUINO_TEENSY41)
+#elif defined(__IMXRT1062_T41__) && defined(ARDUINO_TEENSY41)
 
 #define CORE_NUM_TOTAL_PINS	55
 #define CORE_NUM_DIGITAL	55
